@@ -1,0 +1,39 @@
+{
+  "id": "24_prescription",
+  "file": "24_prescription.pdf",
+  "format": "text_pdf",
+  "doc_type": "prescription",
+  "date": "2026-07-03",
+  "labs": [],
+  "medications": [
+    {
+      "canonical_key": "levocetirizine+montelukast",
+      "dose_value": null,
+      "dose_unit": null,
+      "frequency_code": "BD"
+    },
+    {
+      "canonical_key": "telmisartan",
+      "dose_value": 40,
+      "dose_unit": "mg",
+      "frequency_code": "BD"
+    },
+    {
+      "canonical_key": "clopidogrel",
+      "dose_value": 75,
+      "dose_unit": "mg",
+      "frequency_code": "OD"
+    },
+    {
+      "canonical_key": "levothyroxine",
+      "dose_value": 50,
+      "dose_unit": "mcg",
+      "frequency_code": "TDS"
+    }
+  ],
+  "diagnoses": [
+    "Osteoarthritis Knee",
+    "Vitamin D Deficiency"
+  ],
+  "allergies": []
+}

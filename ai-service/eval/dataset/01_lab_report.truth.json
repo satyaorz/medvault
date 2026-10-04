@@ -1,0 +1,107 @@
+{
+  "id": "01_lab_report",
+  "file": "01_lab_report.pdf",
+  "format": "text_pdf",
+  "doc_type": "lab_report",
+  "date": "2025-08-17",
+  "labs": [
+    {
+      "canonical_code": "hemoglobin",
+      "value": 10.7,
+      "unit": "g/dL"
+    },
+    {
+      "canonical_code": "wbc",
+      "value": 4.7,
+      "unit": "10^3/\u00b5L"
+    },
+    {
+      "canonical_code": "rbc",
+      "value": 4.65,
+      "unit": "10^6/\u00b5L"
+    },
+    {
+      "canonical_code": "platelets",
+      "value": 380.0,
+      "unit": "10^3/\u00b5L"
+    },
+    {
+      "canonical_code": "hematocrit",
+      "value": 43.1,
+      "unit": "%"
+    },
+    {
+      "canonical_code": "mcv",
+      "value": 80.0,
+      "unit": "fL"
+    },
+    {
+      "canonical_code": "mch",
+      "value": 28.8,
+      "unit": "pg"
+    },
+    {
+      "canonical_code": "mchc",
+      "value": 33.5,
+      "unit": "g/dL"
+    },
+    {
+      "canonical_code": "neutrophils",
+      "value": 58.0,
+      "unit": "%"
+    },
+    {
+      "canonical_code": "lymphocytes",
+      "value": 40.0,
+      "unit": "%"
+    },
+    {
+      "canonical_code": "sodium",
+      "value": 143.0,
+      "unit": "mmol/L"
+    },
+    {
+      "canonical_code": "potassium",
+      "value": 3.6,
+      "unit": "mmol/L"
+    },
+    {
+      "canonical_code": "chloride",
+      "value": 107.0,
+      "unit": "mmol/L"
+    },
+    {
+      "canonical_code": "calcium",
+      "value": 10.4,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "bilirubin_total",
+      "value": 0.51,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "alt",
+      "value": 48.0,
+      "unit": "U/L"
+    },
+    {
+      "canonical_code": "ast",
+      "value": 18.0,
+      "unit": "U/L"
+    },
+    {
+      "canonical_code": "alp",
+      "value": 146.0,
+      "unit": "U/L"
+    },
+    {
+      "canonical_code": "albumin",
+      "value": 3.9,
+      "unit": "g/dL"
+    }
+  ],
+  "medications": [],
+  "diagnoses": [],
+  "allergies": []
+}

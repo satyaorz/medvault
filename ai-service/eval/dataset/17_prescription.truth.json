@@ -1,0 +1,32 @@
+{
+  "id": "17_prescription",
+  "file": "17_prescription.jpg",
+  "format": "photo_jpg",
+  "doc_type": "prescription",
+  "date": "2025-09-27",
+  "labs": [],
+  "medications": [
+    {
+      "canonical_key": "domperidone+pantoprazole",
+      "dose_value": null,
+      "dose_unit": null,
+      "frequency_code": "OD"
+    },
+    {
+      "canonical_key": "amoxicillin+clavulanate",
+      "dose_value": 625,
+      "dose_unit": "mg",
+      "frequency_code": "OD"
+    },
+    {
+      "canonical_key": "losartan",
+      "dose_value": 50,
+      "dose_unit": "mg",
+      "frequency_code": "BD"
+    }
+  ],
+  "diagnoses": [
+    "Upper Respiratory Tract Infection"
+  ],
+  "allergies": []
+}

@@ -1,0 +1,52 @@
+{
+  "id": "05_lab_report",
+  "file": "05_lab_report.png",
+  "format": "screenshot_png",
+  "doc_type": "lab_report",
+  "date": "2026-09-18",
+  "labs": [
+    {
+      "canonical_code": "hba1c",
+      "value": 7.7,
+      "unit": "%"
+    },
+    {
+      "canonical_code": "glucose_fasting",
+      "value": 151.0,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "glucose_pp",
+      "value": 172.0,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "cholesterol_total",
+      "value": 237.0,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "triglycerides",
+      "value": 171.0,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "hdl",
+      "value": 35.0,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "ldl",
+      "value": 92.0,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "vldl",
+      "value": 19.0,
+      "unit": "mg/dL"
+    }
+  ],
+  "medications": [],
+  "diagnoses": [],
+  "allergies": []
+}

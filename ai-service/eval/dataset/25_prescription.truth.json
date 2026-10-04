@@ -1,0 +1,28 @@
+{
+  "id": "25_prescription",
+  "file": "25_prescription.png",
+  "format": "screenshot_png",
+  "doc_type": "prescription",
+  "date": "2026-07-31",
+  "labs": [],
+  "medications": [
+    {
+      "canonical_key": "rosuvastatin",
+      "dose_value": 10,
+      "dose_unit": "mg",
+      "frequency_code": "BD"
+    },
+    {
+      "canonical_key": "telmisartan",
+      "dose_value": 40,
+      "dose_unit": "mg",
+      "frequency_code": "OD"
+    }
+  ],
+  "diagnoses": [
+    "Essential Hypertension"
+  ],
+  "allergies": [
+    "Peanuts"
+  ]
+}

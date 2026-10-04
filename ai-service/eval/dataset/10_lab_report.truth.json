@@ -1,0 +1,77 @@
+{
+  "id": "10_lab_report",
+  "file": "10_lab_report.pdf",
+  "format": "text_pdf",
+  "doc_type": "lab_report",
+  "date": "2025-08-17",
+  "labs": [
+    {
+      "canonical_code": "t3",
+      "value": 174.0,
+      "unit": "ng/dL"
+    },
+    {
+      "canonical_code": "t4",
+      "value": 11.8,
+      "unit": "\u00b5g/dL"
+    },
+    {
+      "canonical_code": "tsh",
+      "value": 4.2,
+      "unit": "\u00b5IU/mL"
+    },
+    {
+      "canonical_code": "cholesterol_total",
+      "value": 195.0,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "triglycerides",
+      "value": 232.0,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "hdl",
+      "value": 38.0,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "ldl",
+      "value": 79.0,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "vldl",
+      "value": 23.0,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "bilirubin_total",
+      "value": 0.9,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "alt",
+      "value": 46.0,
+      "unit": "U/L"
+    },
+    {
+      "canonical_code": "ast",
+      "value": 69.0,
+      "unit": "U/L"
+    },
+    {
+      "canonical_code": "alp",
+      "value": 105.0,
+      "unit": "U/L"
+    },
+    {
+      "canonical_code": "albumin",
+      "value": 3.8,
+      "unit": "g/dL"
+    }
+  ],
+  "medications": [],
+  "diagnoses": [],
+  "allergies": []
+}

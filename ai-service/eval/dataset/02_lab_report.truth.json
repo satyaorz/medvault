@@ -1,0 +1,37 @@
+{
+  "id": "02_lab_report",
+  "file": "02_lab_report.pdf",
+  "format": "scanned_pdf",
+  "doc_type": "lab_report",
+  "date": "2026-08-05",
+  "labs": [
+    {
+      "canonical_code": "bilirubin_total",
+      "value": 1.37,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "alt",
+      "value": 77.0,
+      "unit": "U/L"
+    },
+    {
+      "canonical_code": "ast",
+      "value": 40.0,
+      "unit": "U/L"
+    },
+    {
+      "canonical_code": "alp",
+      "value": 104.0,
+      "unit": "U/L"
+    },
+    {
+      "canonical_code": "albumin",
+      "value": 3.6,
+      "unit": "g/dL"
+    }
+  ],
+  "medications": [],
+  "diagnoses": [],
+  "allergies": []
+}

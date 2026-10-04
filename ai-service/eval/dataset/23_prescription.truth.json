@@ -1,0 +1,45 @@
+{
+  "id": "23_prescription",
+  "file": "23_prescription.jpg",
+  "format": "photo_jpg",
+  "doc_type": "prescription",
+  "date": "2025-12-28",
+  "labs": [],
+  "medications": [
+    {
+      "canonical_key": "metformin",
+      "dose_value": 500,
+      "dose_unit": "mg",
+      "frequency_code": "BD"
+    },
+    {
+      "canonical_key": "telmisartan",
+      "dose_value": 40,
+      "dose_unit": "mg",
+      "frequency_code": "BD"
+    },
+    {
+      "canonical_key": "levothyroxine",
+      "dose_value": 50,
+      "dose_unit": "mcg",
+      "frequency_code": "TDS"
+    },
+    {
+      "canonical_key": "azithromycin",
+      "dose_value": 500,
+      "dose_unit": "mg",
+      "frequency_code": "TDS"
+    },
+    {
+      "canonical_key": "metformin+sitagliptin",
+      "dose_value": 50,
+      "dose_unit": "mg",
+      "frequency_code": "TDS"
+    }
+  ],
+  "diagnoses": [
+    "Acid Peptic Disease",
+    "Osteoarthritis Knee"
+  ],
+  "allergies": []
+}

@@ -1,0 +1,55 @@
+{
+  "id": "36_discharge_summary",
+  "file": "36_discharge_summary.pdf",
+  "format": "scanned_pdf",
+  "doc_type": "discharge_summary",
+  "date": "2026-08-06",
+  "labs": [
+    {
+      "canonical_code": "sodium",
+      "value": 138.0,
+      "unit": "mmol/L"
+    },
+    {
+      "canonical_code": "platelets",
+      "value": 400.0,
+      "unit": "10^3/\u00b5L"
+    },
+    {
+      "canonical_code": "potassium",
+      "value": 3.9,
+      "unit": "mmol/L"
+    }
+  ],
+  "medications": [
+    {
+      "canonical_key": "amlodipine",
+      "dose_value": 5,
+      "dose_unit": "mg",
+      "frequency_code": "OD"
+    },
+    {
+      "canonical_key": "omeprazole",
+      "dose_value": 20,
+      "dose_unit": "mg",
+      "frequency_code": "TDS"
+    },
+    {
+      "canonical_key": "rosuvastatin",
+      "dose_value": 10,
+      "dose_unit": "mg",
+      "frequency_code": "SOS"
+    },
+    {
+      "canonical_key": "amoxicillin+clavulanate",
+      "dose_value": 625,
+      "dose_unit": "mg",
+      "frequency_code": "BD"
+    }
+  ],
+  "diagnoses": [
+    "Diabetic Ketoacidosis",
+    "Dyslipidemia"
+  ],
+  "allergies": []
+}

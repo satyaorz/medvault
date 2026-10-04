@@ -1,0 +1,44 @@
+{
+  "id": "34_discharge_summary",
+  "file": "34_discharge_summary.pdf",
+  "format": "text_pdf",
+  "doc_type": "discharge_summary",
+  "date": "2026-07-16",
+  "labs": [
+    {
+      "canonical_code": "hemoglobin",
+      "value": 13.4,
+      "unit": "g/dL"
+    },
+    {
+      "canonical_code": "sodium",
+      "value": 146.0,
+      "unit": "mmol/L"
+    },
+    {
+      "canonical_code": "wbc",
+      "value": 10.8,
+      "unit": "10^3/\u00b5L"
+    }
+  ],
+  "medications": [
+    {
+      "canonical_key": "metformin",
+      "dose_value": 500,
+      "dose_unit": "mg",
+      "frequency_code": "OD"
+    },
+    {
+      "canonical_key": "paracetamol",
+      "dose_value": 650,
+      "dose_unit": "mg",
+      "frequency_code": "OD"
+    }
+  ],
+  "diagnoses": [
+    "Urinary Tract Infection"
+  ],
+  "allergies": [
+    "NSAIDs"
+  ]
+}

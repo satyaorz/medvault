@@ -1,0 +1,26 @@
+{
+  "id": "26_prescription",
+  "file": "26_prescription.pdf",
+  "format": "scanned_pdf",
+  "doc_type": "prescription",
+  "date": "2025-11-26",
+  "labs": [],
+  "medications": [
+    {
+      "canonical_key": "metformin+sitagliptin",
+      "dose_value": 50,
+      "dose_unit": "mg",
+      "frequency_code": "BD"
+    },
+    {
+      "canonical_key": "calcium carbonate+vitamin d3",
+      "dose_value": 500,
+      "dose_unit": "mg",
+      "frequency_code": "SOS"
+    }
+  ],
+  "diagnoses": [
+    "Essential Hypertension"
+  ],
+  "allergies": []
+}

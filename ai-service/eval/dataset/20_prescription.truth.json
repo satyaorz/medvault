@@ -1,0 +1,38 @@
+{
+  "id": "20_prescription",
+  "file": "20_prescription.pdf",
+  "format": "text_pdf",
+  "doc_type": "prescription",
+  "date": "2026-03-25",
+  "labs": [],
+  "medications": [
+    {
+      "canonical_key": "aspirin",
+      "dose_value": 75,
+      "dose_unit": "mg",
+      "frequency_code": "BD"
+    },
+    {
+      "canonical_key": "losartan",
+      "dose_value": 50,
+      "dose_unit": "mg",
+      "frequency_code": "TDS"
+    },
+    {
+      "canonical_key": "paracetamol",
+      "dose_value": 650,
+      "dose_unit": "mg",
+      "frequency_code": "BD"
+    },
+    {
+      "canonical_key": "cetirizine",
+      "dose_value": 10,
+      "dose_unit": "mg",
+      "frequency_code": "BD"
+    }
+  ],
+  "diagnoses": [
+    "Allergic Rhinitis"
+  ],
+  "allergies": []
+}

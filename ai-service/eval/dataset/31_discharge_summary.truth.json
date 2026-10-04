@@ -1,0 +1,55 @@
+{
+  "id": "31_discharge_summary",
+  "file": "31_discharge_summary.pdf",
+  "format": "text_pdf",
+  "doc_type": "discharge_summary",
+  "date": "2025-11-23",
+  "labs": [
+    {
+      "canonical_code": "creatinine",
+      "value": 1.2,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "hemoglobin",
+      "value": 12.5,
+      "unit": "g/dL"
+    },
+    {
+      "canonical_code": "platelets",
+      "value": 211.0,
+      "unit": "10^3/\u00b5L"
+    }
+  ],
+  "medications": [
+    {
+      "canonical_key": "amlodipine",
+      "dose_value": 5,
+      "dose_unit": "mg",
+      "frequency_code": "OD"
+    },
+    {
+      "canonical_key": "domperidone+pantoprazole",
+      "dose_value": null,
+      "dose_unit": null,
+      "frequency_code": "OD"
+    },
+    {
+      "canonical_key": "metformin",
+      "dose_value": 500,
+      "dose_unit": "mg",
+      "frequency_code": "SOS"
+    },
+    {
+      "canonical_key": "metformin+sitagliptin",
+      "dose_value": 50,
+      "dose_unit": "mg",
+      "frequency_code": "OD"
+    }
+  ],
+  "diagnoses": [
+    "Dengue Fever",
+    "Acute Pharyngitis"
+  ],
+  "allergies": []
+}

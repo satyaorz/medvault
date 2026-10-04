@@ -1,0 +1,20 @@
+# env
+.env
+*.local
+# go
+backend/bin/
+# python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+ai-service/eval/results/
+# node
+node_modules/
+frontend/.next/
+frontend/out/
+*.tsbuildinfo
+next-env.d.ts
+# misc
+.DS_Store
+coverage/

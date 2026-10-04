@@ -1,0 +1,84 @@
+# MedVault — local stack.
+#   docker compose up -d                 → infrastructure only (Postgres, Redis, S3) for local dev
+#   docker compose --profile app up -d   → everything, including api, worker, ai-service, frontend
+name: medvault
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: medvault
+      POSTGRES_PASSWORD: medvault
+      POSTGRES_DB: medvault
+    ports: ["5432:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U medvault"]
+      interval: 3s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 3s
+      retries: 20
+
+  s3:
+    # S3-compatible object storage for original documents (MinIO no longer ships public images)
+    image: chrislusf/seaweedfs:latest
+    command: server -dir=/data -s3 -s3.port=8333 -s3.config=/etc/seaweedfs/s3.json -master.volumeSizeLimitMB=1024 -volume.max=0
+    ports: ["8333:8333"]
+    volumes:
+      - s3data:/data
+      - ./deploy/seaweedfs-s3.json:/etc/seaweedfs/s3.json:ro
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1:8333/healthz || exit 1"]
+      interval: 3s
+      retries: 30
+
+  ai-service:
+    profiles: [app]
+    build: ./ai-service
+    environment:
+      LLM_PROVIDER: ${LLM_PROVIDER:-auto}
+      OLLAMA_URL: ${OLLAMA_URL:-http://host.docker.internal:11434}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen3.5:9b}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+    extra_hosts: ["host.docker.internal:host-gateway"]
+    ports: ["8000:8000"]
+
+  api:
+    profiles: [app]
+    build: ./backend
+    command: ["/app/medvault-api"]
+    env_file: [.env.docker]
+    ports: ["8080:8080"]
+    depends_on:
+      postgres: { condition: service_healthy }
+      redis: { condition: service_healthy }
+      s3: { condition: service_healthy }
+
+  worker:
+    profiles: [app]
+    build: ./backend
+    command: ["/app/medvault-worker"]
+    env_file: [.env.docker]
+    depends_on:
+      postgres: { condition: service_healthy }
+      redis: { condition: service_healthy }
+      s3: { condition: service_healthy }
+      ai-service: { condition: service_started }
+
+  frontend:
+    profiles: [app]
+    build: ./frontend
+    environment:
+      API_URL: http://api:8080
+    ports: ["3000:3000"]
+    depends_on: [api]
+
+volumes:
+  pgdata:
+  s3data:

@@ -1,0 +1,9 @@
+{
+  "identities": [
+    {
+      "name": "medvault",
+      "credentials": [{ "accessKey": "medvault", "secretKey": "medvault-secret" }],
+      "actions": ["Admin", "Read", "Write", "List", "Tagging"]
+    }
+  ]
+}

@@ -348,9 +348,11 @@ func TestAuthFlow(t *testing.T) {
 func TestLoginRateLimit(t *testing.T) {
 	e := newEnv(t)
 	c := e.client(t)
+	// Malformed bodies fail fast (no bcrypt) but still consume tokens, keeping
+	// the test independent of hashing speed (e.g. under -race).
 	var last int
 	for i := 0; i < 12; i++ {
-		last = c.do("POST", "/api/auth/login", map[string]string{"email": "x@example.com", "password": "password123"}).status
+		last = c.do("POST", "/api/auth/login", "not-an-object").status
 	}
 	if last != http.StatusTooManyRequests {
 		t.Fatalf("12th login attempt got %d, want 429", last)

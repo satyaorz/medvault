@@ -73,9 +73,10 @@ services:
 
   frontend:
     profiles: [app]
-    build: ./frontend
-    environment:
-      API_URL: http://api:8080
+    build:
+      context: ./frontend
+      args:
+        API_URL: http://api:8080   # Next bakes rewrite targets in at build time
     ports: ["3000:3000"]
     depends_on: [api]
 

@@ -231,7 +231,16 @@ func (s *Server) getDocument(w http.ResponseWriter, r *http.Request) {
 		s.writeStoreError(w, r, err, "document")
 		return
 	}
-	writeJSON(w, http.StatusOK, map[string]any{"document": d})
+	// The detail view always carries ocr_text (null until OCR ran) and steps.
+	steps := d.Steps
+	if steps == nil {
+		steps = []store.Step{}
+	}
+	writeJSON(w, http.StatusOK, map[string]any{"document": struct {
+		*store.Document
+		OCRText *string      `json:"ocr_text"`
+		Steps   []store.Step `json:"steps"`
+	}{d, d.OCRText, steps}})
 }
 
 func (s *Server) documentFile(w http.ResponseWriter, r *http.Request) {

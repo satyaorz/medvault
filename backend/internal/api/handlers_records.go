@@ -3,6 +3,7 @@ package api
 import (
 	"encoding/json"
 	"net/http"
+	"net/url"
 
 	"github.com/go-chi/chi/v5"
 )
@@ -73,7 +74,13 @@ func (s *Server) labs(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *Server) labSeries(w http.ResponseWriter, r *http.Request) {
-	series, err := s.Store.LabSeries(r.Context(), userID(r), chi.URLParam(r, "profileID"), chi.URLParam(r, "code"))
+	// chi returns the raw segment when it contains escapes (e.g. "raw%3Ahgb").
+	code, err := url.PathUnescape(chi.URLParam(r, "code"))
+	if err != nil {
+		writeError(w, http.StatusNotFound, "not_found", "lab test not found")
+		return
+	}
+	series, err := s.Store.LabSeries(r.Context(), userID(r), chi.URLParam(r, "profileID"), code)
 	if err != nil {
 		s.writeStoreError(w, r, err, "lab test")
 		return

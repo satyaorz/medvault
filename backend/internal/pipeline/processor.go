@@ -12,6 +12,8 @@ import (
 	"errors"
 	"fmt"
 	"log/slog"
+	"net"
+	"net/url"
 	"strings"
 
 	"medvault/internal/aiclient"
@@ -232,6 +234,12 @@ func permanentIf(err error) error {
 	return err
 }
 
+func isNetworkError(err error) bool {
+	var netErr net.Error
+	var urlErr *url.Error
+	return errors.As(err, &netErr) || errors.As(err, &urlErr)
+}
+
 func userFacingError(err error) string {
 	var aiErr *aiclient.Error
 	switch {
@@ -241,6 +249,9 @@ func userFacingError(err error) string {
 		return "The file appears to be corrupt or unreadable."
 	case errors.Is(err, context.DeadlineExceeded):
 		return "Processing timed out."
+	case isNetworkError(err):
+		// Don't leak hostnames/ports to users; the worker log has the details.
+		return "The AI service is currently unreachable."
 	}
 	msg := err.Error()
 	if len(msg) > 300 {

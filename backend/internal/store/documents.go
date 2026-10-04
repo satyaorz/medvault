@@ -265,8 +265,8 @@ func (s *Store) ResetForReprocess(ctx context.Context, userID, docID string) (*D
 // ProcessingDocument is what the worker needs to process a document.
 type ProcessingDocument struct {
 	ID, ProfileID, Filename, ContentType, StorageKey string
-	DocType, DocTypeSource, DocDateSource             string
-	Title, Source                                     *string
+	DocType, DocTypeSource, DocDateSource            string
+	Title, Source                                    *string
 }
 
 func (s *Store) DocumentForProcessing(ctx context.Context, docID string) (*ProcessingDocument, error) {

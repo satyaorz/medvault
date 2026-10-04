@@ -459,6 +459,11 @@ func TestProcessingReviewAndRecord(t *testing.T) {
 	if d.ItemCount != 5 || d.PendingItems != 3 { // 2 malformed/unknown discarded; 2 auto-accepted
 		t.Errorf("items=%d pending=%d, want 5/3", d.ItemCount, d.PendingItems)
 	}
+	var rawDoc struct{ Document map[string]json.RawMessage }
+	c.do("GET", "/api/documents/"+docID, nil).json(t, &rawDoc)
+	if _, ok := rawDoc.Document["ocr_text"]; !ok {
+		t.Error("detail must always include ocr_text")
+	}
 	if d.OCRText == nil || !strings.Contains(*d.OCRText, "HGB") || len(d.Steps) != 4 {
 		t.Errorf("detail fields missing: ocr=%v steps=%d", d.OCRText != nil, len(d.Steps))
 	}
@@ -522,6 +527,7 @@ func TestProcessingReviewAndRecord(t *testing.T) {
 		t.Errorf("accepted item = %+v", acc.Item)
 	}
 	expect(t, c.do("GET", "/api/profiles/"+pid+"/labs/raw:serum%20zinc", nil), http.StatusOK)
+	expect(t, c.do("GET", "/api/profiles/"+pid+"/labs/raw%3Aserum%20zinc", nil), http.StatusOK) // encoded colon
 
 	// Accept as-is is refused when the stored data is invalid.
 	expect(t, c.do("PATCH", "/api/items/"+bad.ID, map[string]any{"action": "accept"}), http.StatusUnprocessableEntity)

@@ -25,6 +25,10 @@ func TestBuildMedications(t *testing.T) {
 		ev("amlodipine", "rx2", "prescription", "2026-08-15", nil, 10),
 		ev("rosuvastatin", "rx2", "prescription", "2026-08-15", nil, 10),
 		ev("amoxicillin+clavulanate", "rx2", "prescription", "2026-08-15", ptr(5), 625),
+		// Maintenance therapy written as "x 30 days" stays active while in the latest prescription.
+		ev("metformin", "rx2", "prescription", "2026-08-15", ptr(30), 500),
+		// A long course absent from the latest prescription is flagged, not "completed".
+		ev("cholecalciferol", "rx1", "prescription", "2026-03-03", ptr(56), 60000),
 		// A medication merely mentioned in a later lab report must not define "latest prescription".
 		ev("vitamin d3", "lab1", "lab_report", "2026-09-02", nil, 60000),
 	}
@@ -40,13 +44,15 @@ func TestBuildMedications(t *testing.T) {
 		"atorvastatin":            "not_in_latest",
 		"amoxicillin+clavulanate": "course_completed",
 		"vitamin d3":              "not_in_latest",
+		"metformin":               "active",
+		"cholecalciferol":         "not_in_latest",
 	}
 	for k, w := range want {
 		if status[k] != w {
 			t.Errorf("%s: status %q, want %q", k, status[k], w)
 		}
 	}
-	if len(got.Current) != 2 || got.Current[0].GenericName != "amlodipine" {
+	if len(got.Current) != 3 || got.Current[0].GenericName != "amlodipine" {
 		t.Fatalf("current = %+v", got.Current)
 	}
 	aml := got.Current[0]

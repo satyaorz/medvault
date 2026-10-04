@@ -214,10 +214,14 @@ func (s *Store) Medications(ctx context.Context, userID, profileID string) (*Med
 }
 
 // BuildMedications applies the Phase 2 status rules (docs/CONTRACTS.md §3):
-// a medication is current if it appears in the most recent prescription-like
-// document and its course has not ended; otherwise it is past, either
-// "course_completed" or "not_in_latest". Absence is deliberately not called
-// "discontinued" — the UI asks the user to confirm.
+//   - a short course (≤ ShortCourseDays) whose duration has elapsed → "course_completed"
+//   - otherwise, present in the most recent prescription-like document → "active"
+//   - otherwise → "not_in_latest"
+//
+// Longer durations ("× 30 days") on Indian prescriptions are usually refill
+// intervals for maintenance therapy renewed at each visit, so they do not
+// end a medication. Absence is deliberately not called "discontinued" — the
+// UI asks the user to confirm.
 func BuildMedications(events []MedEventRow, today time.Time) MedicationList {
 	newer := func(a, b MedEventRow) bool {
 		if a.Event.PrescribedAt != b.Event.PrescribedAt {
@@ -282,8 +286,12 @@ func BuildMedications(events []MedEventRow, today time.Time) MedicationList {
 	return list
 }
 
+// ShortCourseDays is the longest duration treated as a finite course
+// (antibiotics, PPIs, antiemetics) rather than a refill interval.
+const ShortCourseDays = 14
+
 func courseEnded(e MedicationEvent, today time.Time) bool {
-	if e.DurationDays == nil || *e.DurationDays <= 0 {
+	if e.DurationDays == nil || *e.DurationDays <= 0 || *e.DurationDays > ShortCourseDays {
 		return false
 	}
 	start, err := time.Parse(time.DateOnly, e.PrescribedAt)

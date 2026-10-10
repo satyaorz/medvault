@@ -1,0 +1,27 @@
+{
+  "id": "16_prescription",
+  "file": "16_prescription.pdf",
+  "format": "scanned_pdf",
+  "doc_type": "prescription",
+  "date": "2025-06-26",
+  "labs": [],
+  "medications": [
+    {
+      "canonical_key": "amlodipine",
+      "dose_value": 5,
+      "dose_unit": "mg",
+      "frequency_code": "OD"
+    },
+    {
+      "canonical_key": "losartan",
+      "dose_value": 50,
+      "dose_unit": "mg",
+      "frequency_code": "TDS"
+    }
+  ],
+  "diagnoses": [
+    "Acute Pharyngitis",
+    "Osteoarthritis Knee"
+  ],
+  "allergies": []
+}

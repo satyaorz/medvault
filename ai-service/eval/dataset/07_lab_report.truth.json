@@ -1,0 +1,97 @@
+{
+  "id": "07_lab_report",
+  "file": "07_lab_report.jpg",
+  "format": "photo_jpg",
+  "doc_type": "lab_report",
+  "date": "2025-12-21",
+  "labs": [
+    {
+      "canonical_code": "urea",
+      "value": 30.0,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "creatinine",
+      "value": 1.26,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "uric_acid",
+      "value": 7.6,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "sodium",
+      "value": 142.0,
+      "unit": "mmol/L"
+    },
+    {
+      "canonical_code": "potassium",
+      "value": 3.6,
+      "unit": "mmol/L"
+    },
+    {
+      "canonical_code": "chloride",
+      "value": 97.0,
+      "unit": "mmol/L"
+    },
+    {
+      "canonical_code": "calcium",
+      "value": 9.3,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "hemoglobin",
+      "value": 14.7,
+      "unit": "g/dL"
+    },
+    {
+      "canonical_code": "wbc",
+      "value": 4.8,
+      "unit": "10^3/\u00b5L"
+    },
+    {
+      "canonical_code": "rbc",
+      "value": 4.4,
+      "unit": "10^6/\u00b5L"
+    },
+    {
+      "canonical_code": "platelets",
+      "value": 189.0,
+      "unit": "10^3/\u00b5L"
+    },
+    {
+      "canonical_code": "hematocrit",
+      "value": 42.4,
+      "unit": "%"
+    },
+    {
+      "canonical_code": "mcv",
+      "value": 94.9,
+      "unit": "fL"
+    },
+    {
+      "canonical_code": "mch",
+      "value": 25.2,
+      "unit": "pg"
+    },
+    {
+      "canonical_code": "mchc",
+      "value": 34.3,
+      "unit": "g/dL"
+    },
+    {
+      "canonical_code": "neutrophils",
+      "value": 71.0,
+      "unit": "%"
+    },
+    {
+      "canonical_code": "lymphocytes",
+      "value": 26.0,
+      "unit": "%"
+    }
+  ],
+  "medications": [],
+  "diagnoses": [],
+  "allergies": []
+}

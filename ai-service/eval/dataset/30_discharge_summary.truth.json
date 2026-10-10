@@ -1,0 +1,48 @@
+{
+  "id": "30_discharge_summary",
+  "file": "30_discharge_summary.pdf",
+  "format": "text_pdf",
+  "doc_type": "discharge_summary",
+  "date": "2025-09-15",
+  "labs": [
+    {
+      "canonical_code": "sodium",
+      "value": 140.0,
+      "unit": "mmol/L"
+    },
+    {
+      "canonical_code": "potassium",
+      "value": 4.1,
+      "unit": "mmol/L"
+    },
+    {
+      "canonical_code": "creatinine",
+      "value": 0.65,
+      "unit": "mg/dL"
+    }
+  ],
+  "medications": [
+    {
+      "canonical_key": "losartan",
+      "dose_value": 50,
+      "dose_unit": "mg",
+      "frequency_code": "BD"
+    },
+    {
+      "canonical_key": "levocetirizine+montelukast",
+      "dose_value": null,
+      "dose_unit": null,
+      "frequency_code": "BD"
+    },
+    {
+      "canonical_key": "metformin+sitagliptin",
+      "dose_value": 50,
+      "dose_unit": "mg",
+      "frequency_code": "HS"
+    }
+  ],
+  "diagnoses": [
+    "Dengue Fever"
+  ],
+  "allergies": []
+}

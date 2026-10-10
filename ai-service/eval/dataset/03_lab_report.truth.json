@@ -1,0 +1,67 @@
+{
+  "id": "03_lab_report",
+  "file": "03_lab_report.jpg",
+  "format": "photo_jpg",
+  "doc_type": "lab_report",
+  "date": "2026-07-14",
+  "labs": [
+    {
+      "canonical_code": "bilirubin_total",
+      "value": 0.5,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "alt",
+      "value": 13.0,
+      "unit": "U/L"
+    },
+    {
+      "canonical_code": "ast",
+      "value": 56.0,
+      "unit": "U/L"
+    },
+    {
+      "canonical_code": "alp",
+      "value": 63.0,
+      "unit": "U/L"
+    },
+    {
+      "canonical_code": "albumin",
+      "value": 4.5,
+      "unit": "g/dL"
+    },
+    {
+      "canonical_code": "hba1c",
+      "value": 6.2,
+      "unit": "%"
+    },
+    {
+      "canonical_code": "glucose_fasting",
+      "value": 95.0,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "glucose_pp",
+      "value": 215.0,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "t3",
+      "value": 133.0,
+      "unit": "ng/dL"
+    },
+    {
+      "canonical_code": "t4",
+      "value": 8.1,
+      "unit": "\u00b5g/dL"
+    },
+    {
+      "canonical_code": "tsh",
+      "value": 7.46,
+      "unit": "\u00b5IU/mL"
+    }
+  ],
+  "medications": [],
+  "diagnoses": [],
+  "allergies": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "18_prescription",
+  "file": "18_prescription.pdf",
+  "format": "text_pdf",
+  "doc_type": "prescription",
+  "date": "2026-08-07",
+  "labs": [],
+  "medications": [
+    {
+      "canonical_key": "atorvastatin",
+      "dose_value": 10,
+      "dose_unit": "mg",
+      "frequency_code": "BD"
+    },
+    {
+      "canonical_key": "amoxicillin+clavulanate",
+      "dose_value": 625,
+      "dose_unit": "mg",
+      "frequency_code": "BD"
+    }
+  ],
+  "diagnoses": [
+    "Vitamin D Deficiency",
+    "Allergic Rhinitis"
+  ],
+  "allergies": []
+}

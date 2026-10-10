@@ -1,0 +1,57 @@
+{
+  "id": "35_discharge_summary",
+  "file": "35_discharge_summary.png",
+  "format": "screenshot_png",
+  "doc_type": "discharge_summary",
+  "date": "2026-09-14",
+  "labs": [
+    {
+      "canonical_code": "creatinine",
+      "value": 0.99,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "hemoglobin",
+      "value": 16.2,
+      "unit": "g/dL"
+    },
+    {
+      "canonical_code": "wbc",
+      "value": 10.0,
+      "unit": "10^3/\u00b5L"
+    }
+  ],
+  "medications": [
+    {
+      "canonical_key": "domperidone+pantoprazole",
+      "dose_value": null,
+      "dose_unit": null,
+      "frequency_code": "BD"
+    },
+    {
+      "canonical_key": "cefixime",
+      "dose_value": 200,
+      "dose_unit": "mg",
+      "frequency_code": "SOS"
+    },
+    {
+      "canonical_key": "aceclofenac+paracetamol",
+      "dose_value": null,
+      "dose_unit": null,
+      "frequency_code": "OD"
+    },
+    {
+      "canonical_key": "paracetamol",
+      "dose_value": 500,
+      "dose_unit": "mg",
+      "frequency_code": "TDS"
+    }
+  ],
+  "diagnoses": [
+    "Diabetic Ketoacidosis",
+    "Type 2 Diabetes Mellitus"
+  ],
+  "allergies": [
+    "Sulfa drugs"
+  ]
+}

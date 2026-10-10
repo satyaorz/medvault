@@ -320,11 +320,19 @@ Unrecognized tests are grouped with `code` = `"raw:" + lower(test_name_original)
 ```
 **MedicationEvent** `{ "id", "document_id", "prescribed_at", "brand_name", "name_original", "form", "dose_value", "dose_unit", "frequency_code", "times_per_day", "schedule", "timing", "duration_days", "instructions" }`
 
-Status rules: a medication is **current** if it appears in the most recent prescription-like
-document (prescription or discharge_summary with ≥1 accepted medication) and its course hasn't
-ended (`prescribed_at + duration_days < today` → `course_completed`, listed under past).
-Medications absent from the latest prescription are `not_in_latest` (past). Phase 3 will turn
-this into proper change detection.
+Status rules (in order):
+1. `course_completed` — the latest mention is a **short course** (duration ≤ 14 days) whose
+   `prescribed_at + duration_days` is before today (antibiotics, PPIs, antiemetics).
+2. `active` (listed under **current**) — it appears in the most recent prescription-like
+   document (prescription or discharge_summary with ≥1 accepted medication). Longer durations
+   such as "× 30 days" are treated as refill intervals for maintenance therapy, not as an end.
+3. `not_in_latest` — otherwise; the UI asks the user to confirm whether it was stopped.
+Phase 3 will turn this into proper change detection.
 
 ### Health
 `GET /api/health` → `{ "status": "ok", "db": "ok", "redis": "ok", "storage": "ok", "ai": "ok"|"unavailable" }`
+
+### Retry state
+Between automatic retries a document is `status: "queued"`, `stage: "queued"` with `error`
+set to a user-facing explanation ("Attempt 1 failed (…) — retrying automatically."); the
+failed step stays visible in `steps`. After the final attempt it becomes `failed`.

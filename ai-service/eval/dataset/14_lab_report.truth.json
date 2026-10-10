@@ -1,0 +1,37 @@
+{
+  "id": "14_lab_report",
+  "file": "14_lab_report.pdf",
+  "format": "text_pdf",
+  "doc_type": "lab_report",
+  "date": "2025-09-03",
+  "labs": [
+    {
+      "canonical_code": "urea",
+      "value": 31.0,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "creatinine",
+      "value": 0.9704,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "uric_acid",
+      "value": 4.3,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "vitamin_d",
+      "value": 27.7,
+      "unit": "ng/mL"
+    },
+    {
+      "canonical_code": "vitamin_b12",
+      "value": 471.0,
+      "unit": "pg/mL"
+    }
+  ],
+  "medications": [],
+  "diagnoses": [],
+  "allergies": []
+}

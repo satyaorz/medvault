@@ -1,0 +1,32 @@
+{
+  "id": "27_prescription",
+  "file": "27_prescription.jpg",
+  "format": "photo_jpg",
+  "doc_type": "prescription",
+  "date": "2026-09-10",
+  "labs": [],
+  "medications": [
+    {
+      "canonical_key": "atorvastatin",
+      "dose_value": 10,
+      "dose_unit": "mg",
+      "frequency_code": "SOS"
+    },
+    {
+      "canonical_key": "ondansetron",
+      "dose_value": 4,
+      "dose_unit": "mg",
+      "frequency_code": "OD"
+    },
+    {
+      "canonical_key": "levothyroxine",
+      "dose_value": 50,
+      "dose_unit": "mcg",
+      "frequency_code": "BD"
+    }
+  ],
+  "diagnoses": [
+    "Hypothyroidism"
+  ],
+  "allergies": []
+}

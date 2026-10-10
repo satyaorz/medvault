@@ -1,0 +1,54 @@
+{
+  "id": "29_discharge_summary",
+  "file": "29_discharge_summary.pdf",
+  "format": "text_pdf",
+  "doc_type": "discharge_summary",
+  "date": "2025-08-24",
+  "labs": [
+    {
+      "canonical_code": "platelets",
+      "value": 335.0,
+      "unit": "10^3/\u00b5L"
+    },
+    {
+      "canonical_code": "potassium",
+      "value": 4.3,
+      "unit": "mmol/L"
+    },
+    {
+      "canonical_code": "hemoglobin",
+      "value": 11.0,
+      "unit": "g/dL"
+    }
+  ],
+  "medications": [
+    {
+      "canonical_key": "clopidogrel",
+      "dose_value": 75,
+      "dose_unit": "mg",
+      "frequency_code": "BD"
+    },
+    {
+      "canonical_key": "domperidone+pantoprazole",
+      "dose_value": null,
+      "dose_unit": null,
+      "frequency_code": "SOS"
+    },
+    {
+      "canonical_key": "paracetamol",
+      "dose_value": 650,
+      "dose_unit": "mg",
+      "frequency_code": "OD"
+    },
+    {
+      "canonical_key": "metformin+sitagliptin",
+      "dose_value": 50,
+      "dose_unit": "mg",
+      "frequency_code": "OD"
+    }
+  ],
+  "diagnoses": [
+    "Community Acquired Pneumonia"
+  ],
+  "allergies": []
+}

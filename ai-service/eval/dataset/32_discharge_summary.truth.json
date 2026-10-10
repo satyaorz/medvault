@@ -1,0 +1,48 @@
+{
+  "id": "32_discharge_summary",
+  "file": "32_discharge_summary.pdf",
+  "format": "scanned_pdf",
+  "doc_type": "discharge_summary",
+  "date": "2026-04-21",
+  "labs": [
+    {
+      "canonical_code": "hemoglobin",
+      "value": 12.9,
+      "unit": "g/dL"
+    },
+    {
+      "canonical_code": "sodium",
+      "value": 135.0,
+      "unit": "mmol/L"
+    },
+    {
+      "canonical_code": "platelets",
+      "value": 163.0,
+      "unit": "10^3/\u00b5L"
+    }
+  ],
+  "medications": [
+    {
+      "canonical_key": "telmisartan",
+      "dose_value": 40,
+      "dose_unit": "mg",
+      "frequency_code": "OD"
+    },
+    {
+      "canonical_key": "calcium carbonate+vitamin d3",
+      "dose_value": 500,
+      "dose_unit": "mg",
+      "frequency_code": "OD"
+    },
+    {
+      "canonical_key": "omeprazole",
+      "dose_value": 20,
+      "dose_unit": "mg",
+      "frequency_code": "BD"
+    }
+  ],
+  "diagnoses": [
+    "Acute Appendicitis"
+  ],
+  "allergies": []
+}

@@ -1,0 +1,72 @@
+{
+  "id": "04_lab_report",
+  "file": "04_lab_report.pdf",
+  "format": "text_pdf",
+  "doc_type": "lab_report",
+  "date": "2026-06-01",
+  "labs": [
+    {
+      "canonical_code": "vitamin_d",
+      "value": 39.6,
+      "unit": "ng/mL"
+    },
+    {
+      "canonical_code": "vitamin_b12",
+      "value": 501.0,
+      "unit": "pg/mL"
+    },
+    {
+      "canonical_code": "hemoglobin",
+      "value": 14.0,
+      "unit": "g/dL"
+    },
+    {
+      "canonical_code": "wbc",
+      "value": 4.6,
+      "unit": "10^3/\u00b5L"
+    },
+    {
+      "canonical_code": "rbc",
+      "value": 5.08,
+      "unit": "10^6/\u00b5L"
+    },
+    {
+      "canonical_code": "platelets",
+      "value": 241.0,
+      "unit": "10^3/\u00b5L"
+    },
+    {
+      "canonical_code": "hematocrit",
+      "value": 47.3,
+      "unit": "%"
+    },
+    {
+      "canonical_code": "mcv",
+      "value": 76.6,
+      "unit": "fL"
+    },
+    {
+      "canonical_code": "mch",
+      "value": 25.2,
+      "unit": "pg"
+    },
+    {
+      "canonical_code": "mchc",
+      "value": 33.2,
+      "unit": "g/dL"
+    },
+    {
+      "canonical_code": "neutrophils",
+      "value": 74.0,
+      "unit": "%"
+    },
+    {
+      "canonical_code": "lymphocytes",
+      "value": 41.0,
+      "unit": "%"
+    }
+  ],
+  "medications": [],
+  "diagnoses": [],
+  "allergies": []
+}

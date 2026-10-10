@@ -1,0 +1,44 @@
+{
+  "id": "28_prescription",
+  "file": "28_prescription.pdf",
+  "format": "text_pdf",
+  "doc_type": "prescription",
+  "date": "2025-09-21",
+  "labs": [],
+  "medications": [
+    {
+      "canonical_key": "levocetirizine+montelukast",
+      "dose_value": null,
+      "dose_unit": null,
+      "frequency_code": "TDS"
+    },
+    {
+      "canonical_key": "amlodipine",
+      "dose_value": 5,
+      "dose_unit": "mg",
+      "frequency_code": "TDS"
+    },
+    {
+      "canonical_key": "aspirin",
+      "dose_value": 75,
+      "dose_unit": "mg",
+      "frequency_code": "HS"
+    },
+    {
+      "canonical_key": "atorvastatin",
+      "dose_value": 10,
+      "dose_unit": "mg",
+      "frequency_code": "BD"
+    },
+    {
+      "canonical_key": "azithromycin",
+      "dose_value": 500,
+      "dose_unit": "mg",
+      "frequency_code": "TDS"
+    }
+  ],
+  "diagnoses": [
+    "Vitamin D Deficiency"
+  ],
+  "allergies": []
+}

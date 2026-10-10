@@ -1,0 +1,44 @@
+{
+  "id": "19_prescription",
+  "file": "19_prescription.pdf",
+  "format": "text_pdf",
+  "doc_type": "prescription",
+  "date": "2026-04-29",
+  "labs": [],
+  "medications": [
+    {
+      "canonical_key": "aceclofenac+paracetamol",
+      "dose_value": null,
+      "dose_unit": null,
+      "frequency_code": "BD"
+    },
+    {
+      "canonical_key": "calcium carbonate+vitamin d3",
+      "dose_value": 500,
+      "dose_unit": "mg",
+      "frequency_code": "OD"
+    },
+    {
+      "canonical_key": "cetirizine",
+      "dose_value": 10,
+      "dose_unit": "mg",
+      "frequency_code": "SOS"
+    },
+    {
+      "canonical_key": "losartan",
+      "dose_value": 50,
+      "dose_unit": "mg",
+      "frequency_code": "BD"
+    },
+    {
+      "canonical_key": "metformin+sitagliptin",
+      "dose_value": 50,
+      "dose_unit": "mg",
+      "frequency_code": "BD"
+    }
+  ],
+  "diagnoses": [
+    "Acid Peptic Disease"
+  ],
+  "allergies": []
+}

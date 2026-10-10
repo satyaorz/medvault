@@ -1,0 +1,43 @@
+{
+  "id": "33_discharge_summary",
+  "file": "33_discharge_summary.jpg",
+  "format": "photo_jpg",
+  "doc_type": "discharge_summary",
+  "date": "2026-08-15",
+  "labs": [
+    {
+      "canonical_code": "wbc",
+      "value": 10.8,
+      "unit": "10^3/\u00b5L"
+    },
+    {
+      "canonical_code": "potassium",
+      "value": 5.3,
+      "unit": "mmol/L"
+    },
+    {
+      "canonical_code": "sodium",
+      "value": 142.0,
+      "unit": "mmol/L"
+    }
+  ],
+  "medications": [
+    {
+      "canonical_key": "cefixime",
+      "dose_value": 200,
+      "dose_unit": "mg",
+      "frequency_code": "SOS"
+    },
+    {
+      "canonical_key": "amoxicillin+clavulanate",
+      "dose_value": 625,
+      "dose_unit": "mg",
+      "frequency_code": "TDS"
+    }
+  ],
+  "diagnoses": [
+    "Acute Gastroenteritis",
+    "Acute Pharyngitis"
+  ],
+  "allergies": []
+}

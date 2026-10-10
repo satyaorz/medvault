@@ -1,0 +1,44 @@
+{
+  "id": "22_prescription",
+  "file": "22_prescription.pdf",
+  "format": "scanned_pdf",
+  "doc_type": "prescription",
+  "date": "2025-07-31",
+  "labs": [],
+  "medications": [
+    {
+      "canonical_key": "paracetamol",
+      "dose_value": 650,
+      "dose_unit": "mg",
+      "frequency_code": "TDS"
+    },
+    {
+      "canonical_key": "ondansetron",
+      "dose_value": 4,
+      "dose_unit": "mg",
+      "frequency_code": "OD"
+    },
+    {
+      "canonical_key": "aceclofenac+paracetamol",
+      "dose_value": null,
+      "dose_unit": null,
+      "frequency_code": "BD"
+    },
+    {
+      "canonical_key": "pantoprazole",
+      "dose_value": 40,
+      "dose_unit": "mg",
+      "frequency_code": "BD"
+    },
+    {
+      "canonical_key": "levocetirizine+montelukast",
+      "dose_value": null,
+      "dose_unit": null,
+      "frequency_code": "BD"
+    }
+  ],
+  "diagnoses": [
+    "Vitamin D Deficiency"
+  ],
+  "allergies": []
+}

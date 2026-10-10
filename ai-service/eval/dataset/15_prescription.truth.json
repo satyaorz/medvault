@@ -1,0 +1,27 @@
+{
+  "id": "15_prescription",
+  "file": "15_prescription.png",
+  "format": "screenshot_png",
+  "doc_type": "prescription",
+  "date": "2025-06-05",
+  "labs": [],
+  "medications": [
+    {
+      "canonical_key": "paracetamol",
+      "dose_value": 500,
+      "dose_unit": "mg",
+      "frequency_code": "OD"
+    },
+    {
+      "canonical_key": "metformin",
+      "dose_value": 500,
+      "dose_unit": "mg",
+      "frequency_code": "TDS"
+    }
+  ],
+  "diagnoses": [
+    "Upper Respiratory Tract Infection",
+    "Urinary Tract Infection"
+  ],
+  "allergies": []
+}

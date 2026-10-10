@@ -1,0 +1,242 @@
+[
+  {
+    "id": "01_lab_report",
+    "file": "01_lab_report.pdf",
+    "format": "text_pdf",
+    "doc_type": "lab_report"
+  },
+  {
+    "id": "02_lab_report",
+    "file": "02_lab_report.pdf",
+    "format": "scanned_pdf",
+    "doc_type": "lab_report"
+  },
+  {
+    "id": "03_lab_report",
+    "file": "03_lab_report.jpg",
+    "format": "photo_jpg",
+    "doc_type": "lab_report"
+  },
+  {
+    "id": "04_lab_report",
+    "file": "04_lab_report.pdf",
+    "format": "text_pdf",
+    "doc_type": "lab_report"
+  },
+  {
+    "id": "05_lab_report",
+    "file": "05_lab_report.png",
+    "format": "screenshot_png",
+    "doc_type": "lab_report"
+  },
+  {
+    "id": "06_lab_report",
+    "file": "06_lab_report.pdf",
+    "format": "scanned_pdf",
+    "doc_type": "lab_report"
+  },
+  {
+    "id": "07_lab_report",
+    "file": "07_lab_report.jpg",
+    "format": "photo_jpg",
+    "doc_type": "lab_report"
+  },
+  {
+    "id": "08_lab_report",
+    "file": "08_lab_report.pdf",
+    "format": "text_pdf",
+    "doc_type": "lab_report"
+  },
+  {
+    "id": "09_lab_report",
+    "file": "09_lab_report.pdf",
+    "format": "text_pdf",
+    "doc_type": "lab_report"
+  },
+  {
+    "id": "10_lab_report",
+    "file": "10_lab_report.pdf",
+    "format": "text_pdf",
+    "doc_type": "lab_report"
+  },
+  {
+    "id": "11_lab_report",
+    "file": "11_lab_report.pdf",
+    "format": "text_pdf",
+    "doc_type": "lab_report"
+  },
+  {
+    "id": "12_lab_report",
+    "file": "12_lab_report.pdf",
+    "format": "scanned_pdf",
+    "doc_type": "lab_report"
+  },
+  {
+    "id": "13_lab_report",
+    "file": "13_lab_report.jpg",
+    "format": "photo_jpg",
+    "doc_type": "lab_report"
+  },
+  {
+    "id": "14_lab_report",
+    "file": "14_lab_report.pdf",
+    "format": "text_pdf",
+    "doc_type": "lab_report"
+  },
+  {
+    "id": "15_prescription",
+    "file": "15_prescription.png",
+    "format": "screenshot_png",
+    "doc_type": "prescription"
+  },
+  {
+    "id": "16_prescription",
+    "file": "16_prescription.pdf",
+    "format": "scanned_pdf",
+    "doc_type": "prescription"
+  },
+  {
+    "id": "17_prescription",
+    "file": "17_prescription.jpg",
+    "format": "photo_jpg",
+    "doc_type": "prescription"
+  },
+  {
+    "id": "18_prescription",
+    "file": "18_prescription.pdf",
+    "format": "text_pdf",
+    "doc_type": "prescription"
+  },
+  {
+    "id": "19_prescription",
+    "file": "19_prescription.pdf",
+    "format": "text_pdf",
+    "doc_type": "prescription"
+  },
+  {
+    "id": "20_prescription",
+    "file": "20_prescription.pdf",
+    "format": "text_pdf",
+    "doc_type": "prescription"
+  },
+  {
+    "id": "21_prescription",
+    "file": "21_prescription.pdf",
+    "format": "text_pdf",
+    "doc_type": "prescription"
+  },
+  {
+    "id": "22_prescription",
+    "file": "22_prescription.pdf",
+    "format": "scanned_pdf",
+    "doc_type": "prescription"
+  },
+  {
+    "id": "23_prescription",
+    "file": "23_prescription.jpg",
+    "format": "photo_jpg",
+    "doc_type": "prescription"
+  },
+  {
+    "id": "24_prescription",
+    "file": "24_prescription.pdf",
+    "format": "text_pdf",
+    "doc_type": "prescription"
+  },
+  {
+    "id": "25_prescription",
+    "file": "25_prescription.png",
+    "format": "screenshot_png",
+    "doc_type": "prescription"
+  },
+  {
+    "id": "26_prescription",
+    "file": "26_prescription.pdf",
+    "format": "scanned_pdf",
+    "doc_type": "prescription"
+  },
+  {
+    "id": "27_prescription",
+    "file": "27_prescription.jpg",
+    "format": "photo_jpg",
+    "doc_type": "prescription"
+  },
+  {
+    "id": "28_prescription",
+    "file": "28_prescription.pdf",
+    "format": "text_pdf",
+    "doc_type": "prescription"
+  },
+  {
+    "id": "29_discharge_summary",
+    "file": "29_discharge_summary.pdf",
+    "format": "text_pdf",
+    "doc_type": "discharge_summary"
+  },
+  {
+    "id": "30_discharge_summary",
+    "file": "30_discharge_summary.pdf",
+    "format": "text_pdf",
+    "doc_type": "discharge_summary"
+  },
+  {
+    "id": "31_discharge_summary",
+    "file": "31_discharge_summary.pdf",
+    "format": "text_pdf",
+    "doc_type": "discharge_summary"
+  },
+  {
+    "id": "32_discharge_summary",
+    "file": "32_discharge_summary.pdf",
+    "format": "scanned_pdf",
+    "doc_type": "discharge_summary"
+  },
+  {
+    "id": "33_discharge_summary",
+    "file": "33_discharge_summary.jpg",
+    "format": "photo_jpg",
+    "doc_type": "discharge_summary"
+  },
+  {
+    "id": "34_discharge_summary",
+    "file": "34_discharge_summary.pdf",
+    "format": "text_pdf",
+    "doc_type": "discharge_summary"
+  },
+  {
+    "id": "35_discharge_summary",
+    "file": "35_discharge_summary.png",
+    "format": "screenshot_png",
+    "doc_type": "discharge_summary"
+  },
+  {
+    "id": "36_discharge_summary",
+    "file": "36_discharge_summary.pdf",
+    "format": "scanned_pdf",
+    "doc_type": "discharge_summary"
+  },
+  {
+    "id": "37_other",
+    "file": "37_other.jpg",
+    "format": "photo_jpg",
+    "doc_type": "other"
+  },
+  {
+    "id": "38_other",
+    "file": "38_other.pdf",
+    "format": "text_pdf",
+    "doc_type": "other"
+  },
+  {
+    "id": "39_other",
+    "file": "39_other.pdf",
+    "format": "text_pdf",
+    "doc_type": "other"
+  },
+  {
+    "id": "40_other",
+    "file": "40_other.pdf",
+    "format": "text_pdf",
+    "doc_type": "other"
+  }
+]

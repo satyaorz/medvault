@@ -1,0 +1,47 @@
+{
+  "id": "09_lab_report",
+  "file": "09_lab_report.pdf",
+  "format": "text_pdf",
+  "doc_type": "lab_report",
+  "date": "2026-05-21",
+  "labs": [
+    {
+      "canonical_code": "t3",
+      "value": 122.0,
+      "unit": "ng/dL"
+    },
+    {
+      "canonical_code": "t4",
+      "value": 8.9,
+      "unit": "\u00b5g/dL"
+    },
+    {
+      "canonical_code": "tsh",
+      "value": 1.86,
+      "unit": "\u00b5IU/mL"
+    },
+    {
+      "canonical_code": "sodium",
+      "value": 144.0,
+      "unit": "mmol/L"
+    },
+    {
+      "canonical_code": "potassium",
+      "value": 5.2,
+      "unit": "mmol/L"
+    },
+    {
+      "canonical_code": "chloride",
+      "value": 106.0,
+      "unit": "mmol/L"
+    },
+    {
+      "canonical_code": "calcium",
+      "value": 9.0,
+      "unit": "mg/dL"
+    }
+  ],
+  "medications": [],
+  "diagnoses": [],
+  "allergies": []
+}

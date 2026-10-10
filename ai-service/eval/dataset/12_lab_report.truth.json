@@ -1,0 +1,57 @@
+{
+  "id": "12_lab_report",
+  "file": "12_lab_report.pdf",
+  "format": "scanned_pdf",
+  "doc_type": "lab_report",
+  "date": "2025-08-28",
+  "labs": [
+    {
+      "canonical_code": "cholesterol_total",
+      "value": 250.0,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "triglycerides",
+      "value": 92.0,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "hdl",
+      "value": 48.0,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "ldl",
+      "value": 141.0,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "vldl",
+      "value": 32.0,
+      "unit": "mg/dL"
+    },
+    {
+      "canonical_code": "sodium",
+      "value": 142.0,
+      "unit": "mmol/L"
+    },
+    {
+      "canonical_code": "potassium",
+      "value": 4.1,
+      "unit": "mmol/L"
+    },
+    {
+      "canonical_code": "chloride",
+      "value": 100.0,
+      "unit": "mmol/L"
+    },
+    {
+      "canonical_code": "calcium",
+      "value": 9.2,
+      "unit": "mg/dL"
+    }
+  ],
+  "medications": [],
+  "diagnoses": [],
+  "allergies": []
+}
